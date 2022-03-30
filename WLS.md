@@ -5,7 +5,7 @@ https://docs.microsoft.com/en-us/windows/wsl/install
 
 ## Config for cplusplus developing env
 ```
-sudo apt install gcc build-essential cmake
+sudo apt install gcc build-essential cmake valgrind -y
 ```
 ## Problems
 ### 1. The x11 app is not able to be launched on windows
