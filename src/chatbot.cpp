@@ -60,6 +60,7 @@ ChatBot::~ChatBot()
         _currentNode = source._currentNode;
         _rootNode = source._rootNode;
         delete _image;
+        //deep copy of image. If not, we will have two objects with the same internal pointer, this can lead to problesm that are hard to trace
         _image = new wxBitmap(*source._image);
         return *this;
     } //copy assignment
